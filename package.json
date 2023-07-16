@@ -1,0 +1,24 @@
+{
+  "name": "dash-project",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbalthis/dash-project.git"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "mongodb"
+  ],
+  "author": "Jason Balthis",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jbalthis/dash-project/issues"
+  },
+  "homepage": "https://github.com/jbalthis/dash-project#readme"
+}
