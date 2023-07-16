@@ -5,6 +5,9 @@
     "next/core-web-vitals",
     "plugin:storybook/recommended"
   ],
+  "globals": {
+    "React": "readonly"
+  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": { "project": ["./tsconfig.json"] },
   "plugins": ["@typescript-eslint"],
@@ -15,7 +18,8 @@
         "allowString": false,
         "allowNumber": false
       }
-    ]
+    ],
+    "no-unused-vars": 0
   },
   "ignorePatterns": [
     ".next/*",
