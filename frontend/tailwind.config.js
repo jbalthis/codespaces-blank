@@ -25,6 +25,7 @@ export default {
       },
       fontFamily: {
         sans: ["Abel", "sans-serif"],
+        cursive: ["Pacifico", "cursive"],
       },
     },
   },
