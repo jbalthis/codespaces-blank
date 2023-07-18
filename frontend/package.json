@@ -15,7 +15,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006 -s ./public",
-    "build-storybook": "storybook build -s public"
+    "build-storybook": "storybook build -s public",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.4.2",
@@ -43,6 +44,7 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "husky": "^8.0.3",
     "storybook": "^7.0.27",
     "webpack": "^5.0.0"
   }

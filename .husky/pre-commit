@@ -1,0 +1,33 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running pre-commit hook"
+
+yarn check-format || 
+(
+  echo "Prettier check failed. Please run 'yarn format' and commit the result.";
+  false;
+)
+
+yarn check-lint ||
+(
+
+  echo "ESLint check failed. Please make required changes and commit the result.";
+  false;
+)
+
+yarn check-types ||
+(
+  echo "TypeScript check failed. Please make required changes and commit the result.";
+  false;
+)
+
+echo "Everything looks good. Passed precommit checks. Attempting build now";
+
+cd frontend && yarn build || 
+(
+  echo "Build failed. Please fix the build errors and try again.";
+  false;
+)
+
+echo "Pre-commit hook finished. Everything looks good."

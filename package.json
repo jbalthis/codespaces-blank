@@ -8,7 +8,14 @@
     "npm": "please-use-yarn"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd frontend && yarn dev",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
+    "format": "prettier --write .",
+    "test-all": "yarn check-format && yarn check-lint",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -24,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/jbalthis/dash-project/issues"
   },
-  "homepage": "https://github.com/jbalthis/dash-project#readme"
+  "homepage": "https://github.com/jbalthis/dash-project#readme",
+  "dependencies": {
+    "husky": "^8.0.3"
+  },
+  "devDependencies": {}
 }
