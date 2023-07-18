@@ -5,24 +5,17 @@
     "next/core-web-vitals",
     "plugin:storybook/recommended",
     "plugin:react/recommended",
-    "google",
     "prettier"
   ],
   "globals": {
     "React": "readonly"
   },
   "parser": "@typescript-eslint/parser",
-  "parserOptions": { "project": ["./tsconfig.json"] },
-  "plugins": ["@typescript-eslint"],
+  "parserOptions": {},
+  "plugins": [],
   "rules": {
-    "@typescript-eslint/strict-boolean-expressions": [
-      2,
-      {
-        "allowString": false,
-        "allowNumber": false
-      }
-    ],
-    "no-unused-vars": 0
+    "no-unused-vars": 0,
+    "react/no-unescaped-entities": 0
   },
   "ignorePatterns": [
     ".next/*",

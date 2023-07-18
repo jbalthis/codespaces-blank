@@ -6,4 +6,6 @@ package-lock.json
 public/
 build/.storybook/
 issues/
+tsconfig.json
+
 

@@ -10,7 +10,7 @@ const Home = () => {
             "Look, folks, I'm not going to lie to you. This is some of the best
             Lorem ipsum you'll ever see. It's bigly, it's beautiful, and it's
             going to make your design look great. Believe me.
-          </div> 
+          </div>
         </div>
         <div className="basis-1/3 p-5 w-full h-full bg-grayLight rounded-md border border-dark-500">
           <div>

@@ -10,10 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cd frontend && yarn dev",
-    "check-types": "tsc --pretty --noEmit",
-    "check-format": "prettier --check .",
+    "check-types": "cd frontend && yarn tsc --pretty --noEmit",
+    "check-format": "cd frontend && yarn prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
-    "format": "prettier --write .",
+    "format": "cd frontend && prettier --write .",
     "test-all": "yarn check-format && yarn check-lint",
     "prepare": "husky install"
   },
@@ -33,7 +33,12 @@
   },
   "homepage": "https://github.com/jbalthis/dash-project#readme",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
     "husky": "^8.0.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0"
+  }
 }
